@@ -9,16 +9,20 @@ const ContactPage = () => {
           Get in Touch
         </h1>
 
-        {/* Contact Form */}
+        {/* Contact Form with Netlify Attributes */}
         <div className="max-w-xl mx-auto mb-12">
           <p className="text-lg text-gray-300 text-center mb-6">
             Have a project in mind or just want to say hello?
           </p>
           <form
-            action="https://formspree.io/f/your-form-id" // Replace with your Formspree ID
+            name="contact"
             method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
             className="space-y-4"
           >
+            {/* The hidden input field for Netlify */}
+            <input type="hidden" name="form-name" value="contact" />
             <input
               type="text"
               name="name"
