@@ -21,8 +21,15 @@ const ContactPage = () => {
             data-netlify-honeypot="bot-field"
             className="space-y-4"
           >
-            {/* The hidden input field for Netlify */}
+            {/* The form name field (required for Netlify) */}
             <input type="hidden" name="form-name" value="contact" />
+            
+            {/* 1. HONEYPOT FIELD FOR SPAM PROTECTION (Hidden with Tailwind) */}
+            <p className="hidden">
+              <label>Don’t fill this out if you’re a human: <input name="bot-field" /></label>
+            </p>
+            {/* ------------------------------------------------------------- */}
+
             <input
               type="text"
               name="name"
