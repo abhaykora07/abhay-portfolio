@@ -9,7 +9,6 @@ const ContactPage = () => {
           Get in Touch
         </h1>
 
-        {/* Contact Form with Netlify Attributes */}
         <div className="max-w-xl mx-auto mb-12">
           <p className="text-lg text-gray-300 text-center mb-6">
             Have a project in mind or just want to say hello?
@@ -21,14 +20,11 @@ const ContactPage = () => {
             data-netlify-honeypot="bot-field"
             className="space-y-4"
           >
-            {/* The form name field (required for Netlify) */}
             <input type="hidden" name="form-name" value="contact" />
-            
-            {/* 1. HONEYPOT FIELD FOR SPAM PROTECTION (Hidden with Tailwind) */}
             <p className="hidden">
               <label>Don’t fill this out if you’re a human: <input name="bot-field" /></label>
             </p>
-            {/* ------------------------------------------------------------- */}
+            <input type="hidden" name="redirectTo" value="/" /> 
 
             <input
               type="text"
@@ -60,12 +56,11 @@ const ContactPage = () => {
           </form>
         </div>
 
-        {/* Social Links */}
         <div className="text-center">
           <h2 className="text-2xl font-semibold mb-4">Connect with me</h2>
           <div className="flex justify-center space-x-6">
             <a
-              href="https://github.com/your-username" // Replace with your GitHub URL
+              href="https://github.com/your-username"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-3xl transition-transform duration-300 hover:scale-125 hover:text-neon-blue"
@@ -73,7 +68,7 @@ const ContactPage = () => {
               <FaGithub />
             </a>
             <a
-              href="https://www.linkedin.com/in/your-username" // Replace with your LinkedIn URL
+              href="https://www.linkedin.com/in/your-username"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-3xl transition-transform duration-300 hover:scale-125 hover:text-neon-blue"
@@ -81,7 +76,7 @@ const ContactPage = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.instagram.com/your-username" // Replace with your Instagram URL
+              href="https://www.instagram.com/your-username"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-3xl transition-transform duration-300 hover:scale-125 hover:text-neon-blue"
