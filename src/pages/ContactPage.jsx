@@ -13,47 +13,21 @@ const ContactPage = () => {
           <p className="text-lg text-gray-300 text-center mb-6">
             Have a project in mind or just want to say hello?
           </p>
-          <form
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            className="space-y-4"
-          >
-            <input type="hidden" name="form-name" value="contact" />
-            <p className="hidden">
-              <label>Don’t fill this out if you’re a human: <input name="bot-field" /></label>
-            </p>
-            <input type="hidden" name="redirectTo" value="/" /> 
-
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-neon-blue"
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-neon-blue"
-              required
-            />
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Your Message"
-              className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-neon-blue"
-              required
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full px-6 py-3 rounded-lg bg-neon-blue text-white font-semibold transition-transform duration-300 hover:scale-105"
-            >
-              Send Message
-            </button>
-          </form>
+          <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+  <p>
+    <label>Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
         </div>
 
         <div className="text-center">
