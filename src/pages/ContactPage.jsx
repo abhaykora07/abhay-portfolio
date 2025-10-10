@@ -27,7 +27,7 @@ const ContactPage = () => {
           <form
             name="contact"
             method="POST"
-            action="https://script.google.com/macros/s/AKfycbwjb8lG3To1XKfgPt4H-9DbN5FfSEO_LzeEle-bXYxWdGeYM_0e9zq7Z820IUdf_3sH8A/exec" // PASTE YOUR URL HERE
+            action="https://script.google.com/macros/s/AKfycbzLlmvns_FmIMjy43NBC6eerOQ9nyGYIQr4_KxSgBL3ISXAoMfkLvWqMiP19_dieFn3tg/exec" // PASTE YOUR URL HERE
             className="space-y-4"
           >
             {/* The rest of your form content remains the same */}
