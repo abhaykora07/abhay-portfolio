@@ -5,12 +5,10 @@ import ParticlesComponent from '../components/Particles';
 const HomePage = () => {
   return (
     <div className="relative bg-gray-900 text-white min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
-      {/* Particles background - Add absolute and inset-0 to make it full screen */}
       <div className="absolute inset-0 z-0">
         <ParticlesComponent />
       </div>
 
-      {/* Hero Section */}
       <div className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

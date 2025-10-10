@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Import useState
+import React, { useState } from 'react';
 import { projects } from '../data/projects';
 import ProjectCard from '../components/ProjectCard';
 
@@ -13,7 +13,6 @@ const ProjectsPage = () => {
       <div className="container mx-auto py-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center text-neon-blue">My Projects</h1>
 
-        {/* Filter Buttons */}
         <div className="flex justify-center space-x-4 mb-12">
           <button
             onClick={() => setActiveFilter('all')}
