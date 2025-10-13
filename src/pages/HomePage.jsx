@@ -1,3 +1,4 @@
+// in src/pages/HomePage.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import ParticlesComponent from '../components/Particles';

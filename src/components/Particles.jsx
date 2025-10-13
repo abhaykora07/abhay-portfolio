@@ -8,7 +8,7 @@ const ParticlesComponent = () => {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
+    console.log(container);
   }, []);
 
   return (
@@ -19,7 +19,7 @@ const ParticlesComponent = () => {
       options={{
         background: {
           color: {
-            value: "#000000", // A dark background for the particles
+            value: "#000000",
           },
         },
         fpsLimit: 120,
@@ -47,10 +47,10 @@ const ParticlesComponent = () => {
         },
         particles: {
           color: {
-            value: "#4f46e5", // Neon blue accent color for the particles
+            value: "#4f46e5",
           },
           links: {
-            color: "#6b7280", // Grayish links to match the theme
+            color: "#6b7280",
             distance: 150,
             enable: true,
             opacity: 0.5,
